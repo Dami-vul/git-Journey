@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Fixed Checkmarks</title>
+    <style>
+      /* Reset & Base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: black;
+        color: #e0e0e0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7;
+        padding: 3rem 1rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Navbar */
+      .navbar {
+        background: black;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 2px rgb(255, 254, 254);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        cursor: pointer;
+        padding-left: 5px;
+      }
+
+      .logo span {
+        color: white;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 2rem;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #7e7c79;
+      }
+
+      .hamburger {
+        display: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+
+      /* Header */
+      .page-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 30px;
+      }
+      .page-header h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        color: white;
+        letter-spacing: 1.5px;
+      }
+
+      /* Main container */
+      .main {
+        max-width: 900px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      /* BIG BOX */
+      .box {
+        background: linear-gradient(135deg, black 0%, #7e7c79 100%);
+        padding: 3rem 2.5rem;
+        border-radius: 24px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 650px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 280px;
+      }
+      .box:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+      }
+
+      .box h3 {
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 800;
+      }
+      .box p {
+        font-size: 1.15rem;
+        margin-bottom: 1.5rem;
+        color: #eee;
+        flex-grow: 1;
+      }
+      .box ul {
+        list-style: none;
+        margin-bottom: 2rem;
+        flex-grow: 1;
+      }
+      .box ul li {
+        position: relative;
+        padding-left: 2.5rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.1rem;
+        color: #ff0; /* Yellow like in your image */
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      /* FIXED: Proper Checkmark Symbol */
+      .box ul li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        color: #ff0;
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+
+      /* BIGGER BUTTON */
+      .btn-salons {
+        align-self: flex-end;
+        background: white;
+        color: #111;
+        padding: 0.9rem 2rem;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 1.05rem;
+        text-decoration: none;
+        transition: background 0.3s, transform 0.2s;
+        margin-top: auto;
+      }
+      .btn-salons:hover {
+        background: #7e7c79;
+        transform: scale(1.08);
+      }
+
+      /* Alignment */
+      .align-right {
+        margin-left: auto;
+      }
+      .align-left {
+        margin-right: auto;
+      }
+
+      /* Responsive */
+      @media (max-width: 700px) {
+        .box {
+          max-width: 100%;
+          padding: 2.5rem 2rem;
+          min-height: auto;
+        }
+        .box h3 {
+          font-size: 1.7rem;
+        }
+        .box p,
+        .box ul li {
+          font-size: 1rem;
+        }
+        .btn-salons {
+          align-self: center;
+          padding: 0.8rem 1.8rem;
+          font-size: 1rem;
+        }
+        .page-header h1 {
+          font-size: 2.2rem;
+        }
+        .align-right,
+        .align-left {
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo"><span>BeyondGender</span></div>
+      <ul class="nav-links">
+        <li><a href="saloon.html">Home</a></li>
+        <!-- <li><a href="something.html">Services</a></li> -->
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="saloon.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="homeservice">Home Service</a></li>
+        <li><a href="saloonlogin.html">login</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+      <h1>Our Services</h1>
+    </header>
+
+    <!-- Boxes -->
+    <div class="main">
+      <!-- 1 – Right -->
+      <div class="box align-right">
+        <h3>Hair Braiding</h3>
+        <p>
+          From classic braids to intricate designs, we set you up to express the
+          beautiful trends and braids. Our experienced stylists are passionate
+          about creating unique and flawless styles that suit.
+        </p>
+        <ul>
+          <li>Cornrows</li>
+          <li>Box Braids</li>
+          <li>Senegalese Twists</li>
+          <li>Dreadlock Installation &amp; Maintenance</li>
+        </ul>
+        <a href="hairstyles.html" class="btn-salons">View Salons</a>
+      </div>
+
+      <!-- 2 – Left -->
+      <div class="box align-left">
+        <h3>Hair Coloring</h3>
+        <p>
+          Transform your look with vibrant, long-lasting colors applied by
+          certified colorists.
+        </p>
+        <ul>
+          <li>Full Color</li>
+          <li>Highlights</li>
+          <li>Balayage</li>
+          <li>Root Touch-up</li>
+        </ul>
+        <a href="haircoloring.html" class="btn-salons">View Salons</a>
+      </div>
+
+      <!-- 3 – Right -->
+      <div class="box align-right">
+        <h3>Haircuts &amp; Styling</h3>
+        <p>
+          Precision cuts and trendy styling for every hair type and occasion.
+        </p>
+        <ul>
+          <li>Men’s Cut</li>
+          <li>Women’s Cut</li>
+          <li>Blowout</li>
+          <li>Updo</li>
+        </ul>
+        <a href="haircuts.html" class="btn-salons">View Salons</a>
+      </div>
+
+      <!-- 4 – Right -->
+      <div class="box align-left">
+        <h3>Treatments</h3>
+        <p>
+          Deep conditioning, keratin, scalp therapy – keep your hair healthy and
+          shiny.
+        </p>
+        <ul>
+          <li>Keratin Smoothing</li>
+          <li>Protein Treatment</li>
+          <li>Scalp Detox</li>
+          <li>Hair Mask</li>
+        </ul>
+        <a href="treatments.html" class="btn-salons">View Salons</a>
+      </div>
+    </div>
+  </body>
+</html>

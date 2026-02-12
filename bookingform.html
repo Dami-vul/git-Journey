@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Salons & Prices</title>
+    <link rel="stylesheet" href="bookingform.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo"><span>BeyondGender</span></div>
+      <ul class="nav-links">
+        <li><a href="saloon.html">Home</a></li>
+        <li><a href="something.html">Services</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="saloon.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="homeservice">Home Service</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+
+    <h1>Hair Salons & Pricing Guide</h1>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>JENOM'S Services</th>
+            <th>Location</th>
+            <th>Haircut (Women)</th>
+            <th>Haircut (Men)</th>
+            <th>Coloring (Full)</th>
+            <th>Blow Dry & Style</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="salon-name">Luxe Locks</td>
+            <td class="location">Downtown NYC</td>
+            <td class="price">₦15,000</td>
+            <td class="price">₦15,000</td>
+            <td class="price">₦15,000</td>
+            <td class="price">₦15,000</td>
+          </tr>
+          <tr>
+            <td class="salon-name">Clip & Chic</td>
+            <td class="location">Brooklyn</td>
+            <td class="price">$65</td>
+            <td class="price">$35</td>
+            <td class="price">$140</td>
+            <td class="price">$45</td>
+          </tr>
+          <tr>
+            <td class="salon-name">The Strand Studio</td>
+            <td class="location">Los Angeles</td>
+            <td class="price">$95</td>
+            <td class="price">$50</td>
+            <td class="price">$200</td>
+            <td class="price">$60</td>
+          </tr>
+          <tr>
+            <td class="salon-name">Urban Shear</td>
+            <td class="location">Chicago</td>
+            <td class="price">$70</td>
+            <td class="price">$40</td>
+            <td class="price">$155</td>
+            <td class="price">$50</td>
+          </tr>
+          <tr>
+            <td class="salon-name">Glamour Grove</td>
+            <td class="location">Miami</td>
+            <td class="price">$80</td>
+            <td class="price">$42</td>
+            <td class="price">$170</td>
+            <td class="price">$52</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Booking Form -->
+    <section id="booking" class="booking">
+      <h2 class="section-title">Book Your Appointment</h2>
+      <form id="bookingForm" class="booking-form">
+        <div class="form-group">
+          <label>Service</label>
+          <select id="service" required>
+            <option value="">Choose a service</option>
+            <option value="hair">Hair Styling</option>
+            <option value="nails">hair dying</option>
+            <option value="makeup">carving</option>
+            <option value="massage">Massage Therapy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Time</label>
+          <select id="time" required>
+            <option value="">Select time</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" id="phone" placeholder="+234" required />
+        </div>
+
+        <div class="form-group">
+          <label>choose salon</label>
+          <select id="service" required>
+            <option value="">Jenom</option>
+            <option value="hair">No Limit</option>
+            <option value="nails">Naturestrands</option>
+            <option value="makeup">jaysquad barbers</option>
+            <option value="massage">Fj barbershop</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary">Confirm Booking</button>
+        <p class="availability-msg" id="availabilityMsg"></p>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+body{
+   background: url('login.jpg');
+   background-size: 10%; 
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   font-family: Arial, sans-serif;
+}
+
+      /* Navbar */
+      .navbar {
+        background: black;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 2px rgb(255, 254, 254);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        cursor: pointer;
+        padding-left: 5px;
+      }
+
+      .logo span {
+        color: white;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 2rem;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #7e7c79;
+      }
+
+      .hamburger {
+        display: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+
+.login{
+     background-color: rgba(0, 0, 0, 0.12);
+;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: max-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    color: white;
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+input[type="text"]{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color:  rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="text"] ::placeholder{
+    color: white;
+    font-family: 'segoe UI' Verdana, Geneva, Tahoma, sans-serif;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="text"]:focus{
+    outline: none;
+  
+    background-color: black;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.parrafos{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: medium;
+    margin-bottom: 15px;
+}
+
+#signup{
+    color: white;
+    
+}
+
+#button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:black;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#button:hover{
+    background-color: rgb(62, 60, 60);
+    transform: scale(1.05);
+    transition: background 0.3s, transform 0.2s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color:white;
+}
+
+
+

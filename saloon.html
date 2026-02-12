@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Beyond Gender | Book Your Beauty</title>
+		<link rel="stylesheet" href="saloonstyle.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar">
+			<div class="logo"><span>BeyondGender</span></div>
+			<ul class="nav-links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="something.html">Services</a></li>
+				<li><a href="#booking">Book Now</a></li>
+				<li><a href="#reviews">Reviews</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#homeservice">Home Service</a></li>
+				<li><a href="saloonlogin.html">login</a></li>
+			</ul>
+			<div class="hamburger">☰</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section id="home" class="hero">
+			<div class="hero-content">
+				<h1>Elegance,<br />Without Exception</h1>
+				<p>Premium salon services tailored just for you</p>
+				<a href="bookingform.html" class="btn-primary">Book Appointment</a>
+			</div>
+			<div class="hero-image">
+				<img
+					src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+					alt="Salon interior" />
+			</div>
+		</section>
+
+		<!-- Services -->
+		<section id="services" class="services">
+			<h2 class="section-title">Our Services</h2>
+			<div class="service-grid">
+				<div class="service-card">
+					<i class="fas fa-cut"></i>
+					<h3>Hair Styling</h3>
+					<p>Cuts, coloring, blowouts & more</p>
+					<span class="price">From ₦15,000</span>
+				</div>
+				<div class="service-card">
+					<i class="fas fa-spa"></i>
+					<h3>Manicure & Pedicure</h3>
+					<p>Gel, acrylic, spa treatments</p>
+					<span class="price">From ₦8,000</span>
+				</div>
+				<div class="service-card">
+					<i class="fas fa-female"></i>
+					<h3>Makeup Artistry</h3>
+					<p>Bridal, event, everyday glam</p>
+					<span class="price">From ₦20,000</span>
+				</div>
+				<div class="service-card">
+					<i class="fas fa-hand-sparkles"></i>
+					<h3>Massage Therapy</h3>
+					<p>Relaxing full-body sessions</p>
+					<span class="price">From ₦25,000</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="slideshow-section">
+			<div class="slideshow-container">
+				<!-- Hidden Radio Buttons -->
+				<input type="radio" name="slide" id="s1" class="nav-radio" checked />
+				<input type="radio" name="slide" id="s2" class="nav-radio" />
+				<input type="radio" name="slide" id="s3" class="nav-radio" />
+				<input type="radio" name="slide" id="s4" class="nav-radio" />
+
+				<!-- Slides -->
+				<div class="slides-wrapper">
+					<!-- Slide 1 -->
+					<div class="slide">
+						<label for="s4" class="nav prev">Previous</label>
+						<label for="s2" class="nav next">Next</label>
+						<img src="slice3.jpg" alt="Unisex Hair Styling" />
+						<div class="caption">
+							<h3>Unisex Hair Styling</h3>
+							<p>Modern cuts, coloring, and styling for all.</p>
+						</div>
+					</div>
+
+					<!-- Slide 2 -->
+					<div class="slide">
+						<label for="s1" class="nav prev">Previous</label>
+						<label for="s3" class="nav next">Next</label>
+						<img src="slice4.jpg" alt="Wig & Braids" />
+						<div class="caption">
+							<h3>Wig Installation & Braids</h3>
+							<p>Flawless wigs and protective styles.</p>
+						</div>
+					</div>
+
+					<!-- Slide 3 -->
+					<div class="slide">
+						<label for="s2" class="nav prev">Previous</label>
+						<label for="s4" class="nav next">Next</label>
+						<img src="slice1.jpg" alt="Male Grooming" />
+						<div class="caption">
+							<h3>Male Grooming</h3>
+							<p>Sharp fades and classic barbering.</p>
+						</div>
+					</div>
+
+					<!-- Slide 4 -->
+					<div class="slide">
+						<label for="s3" class="nav prev">Previous</label>
+						<label for="s1" class="nav next">Next</label>
+						<img src="slice2.jpg" alt="Relaxing Massage" />
+						<div class="caption">
+							<h3>Relaxing Massage</h3>
+							<p>Full-body wellness for everyone.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Dots -->
+				<div class="dots">
+					<label for="s1" class="dot"></label>
+					<label for="s2" class="dot"></label>
+					<label for="s3" class="dot"></label>
+					<label for="s4" class="dot"></label>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services -->
+		<section id="reviews" class="services">
+			<h2 class="section-title">What People Say</h2>
+			<div class="service-grid">
+				<div class="service-card">
+					<p>"I had the best hair cut during my last session"</p>
+					<h3>-Sharon Laura</h3>
+				</div>
+				<div class="service-card">
+					<p>"They have the best customer care"</p>
+					<h3>-Sharon Laura</h3>
+				</div>
+				<div class="service-card">
+					<p>"It was not what I expected, but it is good."</p>
+					<h3>-Sharon Laura</h3>
+				</div>
+				<div class="service-card">
+					<p>"I got my dream bone straight here."</p>
+					<h3>-Sharon Laura</h3>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-col">
+					<div class="logo">Beyond<span>Gender</span></div>
+					<p>
+						Elegance, Without Exception. Premium unisex salon services in
+						Nigeria.
+					</p>
+					<div class="social-links">
+						<a href="#" aria-label="Facebook"
+							><i class="fab fa-facebook-f"></i
+						></a>
+						<a href="#" aria-label="Instagram"
+							><i class="fab fa-instagram"></i
+						></a>
+						<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+						<a href="#" aria-label="WhatsApp"
+							><i class="fab fa-whatsapp"></i
+						></a>
+					</div>
+				</div>
+
+				<div class="footer-col">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="table.html">Services</a></li>
+						<li><a href="#booking">Book Now</a></li>
+						<li><a href="#testimonials">Reviews</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h3>Services</h3>
+					<ul>
+						<li><a href="#">Hair Styling</a></li>
+						<li><a href="#">Manicure & Pedicure</a></li>
+						<li><a href="#">Makeup Artistry</a></li>
+						<li><a href="#">Massage Therapy</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h3>Contact Us</h3>
+					<p>
+						<i class="fas fa-map-marker-alt"></i> 123 Beauty Ave, Jos, Plateau
+					</p>
+					<p><i class="fas fa-phone"></i> +234 801 234 5678</p>
+					<p><i class="fas fa-envelope"></i> hello@beyondgender.ng</p>
+					<p><i class="fas fa-clock"></i> Mon–Sat: 9AM–7PM</p>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>
+					&copy; 2025 Beyond Gender. All rights reserved. |
+					<a href="#">Privacy Policy</a>
+				</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
